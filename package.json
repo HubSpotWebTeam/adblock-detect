@@ -15,7 +15,7 @@
     "prepare": "npm run build",
     "build": "rm -Rf dist/ && webpack --config webpack.config.js",
     "dev": "webpack --config webpack.config.js --watch",
-    "eslint": "eslint --ext .js,.ts src"
+    "lint": "eslint --ext .js,.ts src"
   },
   "keywords": [
     "adblock"
