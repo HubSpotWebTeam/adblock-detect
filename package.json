@@ -1,6 +1,6 @@
 {
   "name": "@hs-web-team/adblocker-detect",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Script to detect the presence of AdBlockers",
   "repository": "https://github.com/HubSpotWebTeam/adblock-detect",
   "main": "./dist/index.js",
