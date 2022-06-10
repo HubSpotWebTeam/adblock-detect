@@ -1,0 +1,40 @@
+{
+  "name": "@hs-web-team/adblocker-detect",
+  "version": "1.0.2",
+  "description": "Script to detect the presence of AdBlockers",
+  "repository": "https://github.com/HubSpotWebTeam/adblock-detect",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browser": {
+    "dist/index.js": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "build": "rm -Rf dist/ && webpack --config webpack.config.js",
+    "dev": "webpack --config webpack.config.js --watch",
+    "eslint": "eslint --ext .js,.ts src"
+  },
+  "keywords": [
+    "adblock"
+  ],
+  "files": [
+    "/dist"
+  ],
+  "types": "dist/index.d.ts",
+  "author": "@darkmavis1980",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^8.13.0",
+    "ts-loader": "^9.2.8",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
