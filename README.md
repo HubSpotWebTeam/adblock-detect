@@ -12,7 +12,13 @@
 <!-- index-end -->
 ## Development
 
-If you need to build the code for this package, you just need to either run the `npm run build` command, or if you want to build it in watch mode, just run `npm run dev`.
+This package requires **Node.js 22 or newer**. It is built with [Vite](https://vite.dev/) (library mode) and tested with [Vitest](https://vitest.dev/).
+
+- `npm run build` — build the package (outputs ESM, CJS and type declarations to `dist/`)
+- `npm run dev` — build in watch mode
+- `npm run test` — run the test suite (`npm run test:watch` for watch mode)
+- `npm run lint` — lint the source
+- `npm run typecheck` — type-check without emitting
 
 ## How to use it
 
